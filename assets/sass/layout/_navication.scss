@@ -1,0 +1,152 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  height: 96px;
+  padding: 0 100px;
+  button {
+    cursor: pointer;
+  }
+  a {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+    li {
+      &:hover {
+        background-color: rgb(109, 104, 96);
+      }
+    }
+  }
+
+  .myBottom {
+    transform: rotateZ(90deg);
+    margin-left: 10px;
+  }
+  .Select-ulTag {
+    position: relative;
+    > ul {
+      font-size: 16px;
+      transition: 1s;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  .myBtn {
+    display: none;
+  }
+
+  .initial-scale {
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+    border-top: 3px solid rgb(0, 81, 255);
+    display: none;
+    position: absolute;
+  }
+  .link-menu {
+    background-color: white;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    width: 200px;
+    border-top: 3px solid rgb(0, 81, 255);
+    left: 200px;
+    top: 65px;
+  }
+  .btn-remov {
+    display: none;
+  }
+
+  .About{
+    position: relative;
+  }
+  @media screen and (min-width: 1000px) {
+    li.Links {
+      &:hover {
+        .link-menu {
+          display: block;
+        }
+      }
+    }
+    li.About {
+      
+      &:hover {
+        .initial-scale {
+          display: block;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    nav {
+      justify-content: space-around;
+    }
+    .Select-ulTag {
+      display: none;
+      position: relative;
+      > button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 32px;
+      }
+    }
+    .btn-remov {
+      display: block;
+      background: none;
+      border: 0;
+    }
+    .myBtn {
+      display: block;
+      > button {
+        border: 0;
+        background: 0;
+        font-size: 40px;
+      }
+    }
+    a {
+      padding: 10px;
+      font-size: 20px;
+    }
+    .displayClass {
+      display: block;
+      width: 80%;
+      height: 1000px;
+      position: fixed;
+      background-color: white;
+      right: 0;
+      top: 0;
+      > ul {
+        background-color: white;
+        display: block;
+        width: 80%;
+        height: auto;
+      }
+    }
+    .displayUl {
+      display: inline-block;
+      position: relative;
+      border-bottom: 3px solid rgb(0, 81, 255);
+      left: 20px;
+    }
+    .myTop {
+      transform: rotateZ(-90deg);
+      margin-bottom: 10px;
+    }
+    .link-menu {
+      margin-left: -20px;
+      padding-left: 20px;
+      top: 0;
+      border: 0;
+    }
+  }
+}

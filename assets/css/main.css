@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  max-width: 1000px;
+  width: 100%;
+  height: 80px;
+  border: 1px solid black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  height: 96px;
+  padding: 0 100px;
+}
+nav button {
+  cursor: pointer;
+}
+nav a {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background-color: rgb(109, 104, 96);
+}
+nav .myBottom {
+  transform: rotateZ(90deg);
+  margin-left: 10px;
+}
+nav .Select-ulTag {
+  position: relative;
+}
+nav .Select-ulTag > ul {
+  font-size: 16px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .myBtn {
+  display: none;
+}
+nav .initial-scale {
+  background-color: white;
+  padding: 10px;
+  width: 200px;
+  border-top: 3px solid rgb(0, 81, 255);
+  display: none;
+  position: absolute;
+}
+nav .link-menu {
+  background-color: white;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  width: 200px;
+  border-top: 3px solid rgb(0, 81, 255);
+  left: 200px;
+  top: 65px;
+}
+nav .btn-remov {
+  display: none;
+}
+nav .About {
+  position: relative;
+}
+@media screen and (min-width: 1000px) {
+  nav li.Links:hover .link-menu {
+    display: block;
+  }
+  nav li.About:hover .initial-scale {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  nav nav {
+    justify-content: space-around;
+  }
+  nav .Select-ulTag {
+    display: none;
+    position: relative;
+  }
+  nav .Select-ulTag > button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 32px;
+  }
+  nav .btn-remov {
+    display: block;
+    background: none;
+    border: 0;
+  }
+  nav .myBtn {
+    display: block;
+  }
+  nav .myBtn > button {
+    border: 0;
+    background: 0;
+    font-size: 40px;
+  }
+  nav a {
+    padding: 10px;
+    font-size: 20px;
+  }
+  nav .displayClass {
+    display: block;
+    width: 80%;
+    height: 1000px;
+    position: fixed;
+    background-color: white;
+    right: 0;
+    top: 0;
+  }
+  nav .displayClass > ul {
+    background-color: white;
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+  nav .displayUl {
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid rgb(0, 81, 255);
+    left: 20px;
+  }
+  nav .myTop {
+    transform: rotateZ(-90deg);
+    margin-bottom: 10px;
+  }
+  nav .link-menu {
+    margin-left: -20px;
+    padding-left: 20px;
+    top: 0;
+    border: 0;
+  }
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+}
+main section {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+main .qirmizi-qutu {
+  background-color: rgba(248, 101, 101, 0.829);
+}
+main .get-start {
+  background-color: rgba(255, 136, 0, 0.815);
+  display: flex;
+  justify-content: center;
+}
+main .get-start .what-you {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .get-start .what-you .start {
+  text-align: center;
+  padding: 40px 0;
+  color: white;
+}
+main .get-start .what-you h2 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  max-width: 400px;
+}
+main .get-start .what-you .btn {
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: 0;
+  font-weight: 600;
+}
+main .Pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+main .Pricing .quick-build {
+  max-width: 400px;
+}
+main .Pricing .quick-build h2 {
+  text-align: center;
+  color: black;
+  font-size: 32px;
+}
+main .Pricing .quick-build p {
+  font-size: 16px;
+  text-align: center;
+}
+main .Pricing .free-card {
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+main .Pricing .free-card .card-boxs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(172, 167, 167, 0.548);
+}
+main .Pricing .free-card .card-boxs .freebox {
+  border: 1px solid rgba(114, 112, 112, 0.37);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(124, 121, 118, 0.349);
+}
+main .Pricing .free-card .card-boxs .users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .Pricing .free-card .card-boxs .users .nots {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+}
+main .Pricing .free-card .card-boxs .users .nots .myptag {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.568);
+}
+main .Pricing .free-card .card-boxs .users .myuser {
+  text-align: center;
+  padding: 10px;
+}
+main .Pricing .free-card .card-boxs .users .singbtn {
+  border: 2px solid rgb(0, 132, 255);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  color: rgb(0, 132, 255);
+  border-radius: 5px;
+  max-width: 140px;
+  width: 100%;
+}
+main .Pricing .free-card .card-boxs .users .clickBlu {
+  background-color: rgb(0, 132, 255);
+  color: white;
+}
+main .boz-qutu {
+  background-color: rgba(141, 135, 135, 0.74);
+}
+main .aciqmavi-qutu {
+  background-color: rgba(0, 255, 255, 0.507);
+}
+main .ag-qutu {
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */

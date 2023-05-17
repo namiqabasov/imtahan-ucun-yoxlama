@@ -1,0 +1,126 @@
+main {
+  max-width: 1000px;
+  width: 100%;
+
+  section {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+  }
+
+  .qirmizi-qutu {
+    background-color: rgba(248, 101, 101, 0.829);
+  }
+
+  .get-start {
+    background-color: rgba(255, 136, 0, 0.815);
+    display: flex;
+    justify-content: center;
+    .what-you {
+      width: 80%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .start {
+        text-align: center;
+        padding: 40px 0;
+        color: white;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        max-width: 400px;
+      }
+      .btn {
+        padding: 15px 30px;
+        border-radius: 25px;
+        border: 0;
+        font-weight: 600;
+      }
+    }
+  }
+  .Pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    .quick-build {
+      max-width: 400px;
+      h2 {
+        text-align: center;
+        color: black;
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    .free-card {
+      max-width: 600px;
+
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      .card-boxs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(172, 167, 167, 0.548);
+        .freebox {
+          border: 1px solid rgba(114, 112, 112, 0.37);
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+          background-color: rgba(124, 121, 118, 0.349);
+        }
+
+        .users {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .nots {
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            .myptag {
+              font-size: 24px;
+              color: rgba(0, 0, 0, 0.568);
+            }
+          }
+          .myuser {
+            text-align: center;
+            padding: 10px;
+          }
+          .singbtn {
+            border: 2px solid rgb(0, 132, 255);
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            color: rgb(0, 132, 255);
+            border-radius: 5px;
+            max-width: 140px;
+            width: 100%;
+          }
+          .clickBlu {
+            background-color: rgb(0, 132, 255);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .boz-qutu {
+    background-color: rgba(141, 135, 135, 0.74);
+  }
+  .aciqmavi-qutu {
+    background-color: rgba(0, 255, 255, 0.507);
+  }
+  .ag-qutu {
+    background-color: white;
+  }
+}
