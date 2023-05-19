@@ -126,6 +126,23 @@ main .New-cartd .our-team h2 {
 main .New-cartd .our-team p {
   font-size: 23px;
 }
+main .New-cartd .inputname {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+main .New-cartd .inputname input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 3px solid rgb(104, 228, 222);
+}
+main .New-cartd .inputname button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid rgb(104, 228, 222);
+  background: none;
+}
 main .cart-expert {
   display: flex;
   justify-content: space-around;
@@ -162,4 +179,20 @@ main .cart-expert .mycart .btn {
   padding: 15px 30px;
   border-radius: 5px;
   margin: 10px 0;
+}
+
+.newclass {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.newclass p {
+  text-align: center;
+  font-size: 40px;
+  font-family: cursive;
+}
+.newclass img {
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

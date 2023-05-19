@@ -21,10 +21,10 @@ function createCartelement(data) {
 
   button.innerText = data.address.street;
 
-  myPtag1.className = "name";
-  myPtag2.className = "input";
-  button.className = "input";
-  myDiv.className = "mycart";
+  // myPtag1.className = "name";
+  // myPtag2.className = "input";
+  // button.className = "input";
+  // myDiv.className = "mycart";
   myDiv.classList.add("newclass");
   
 
