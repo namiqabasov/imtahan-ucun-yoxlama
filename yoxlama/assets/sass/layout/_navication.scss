@@ -1,0 +1,116 @@
+header {
+  width: 100%;
+
+  .Media {
+    background-color: rgb(141, 34, 34);
+
+    .Myicon {
+      display: flex;
+      gap: 10px;
+      i {
+        transition: 0.5s;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .My-link {
+      display: flex;
+      a {
+        transition: 0.5s;
+        padding: 9px 10px;
+
+        &:hover {
+          color: white;
+        }
+      }
+      .Login {
+        background-color: rgb(255, 145, 0);
+      }
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+    }
+  }
+}
+
+nav {
+  padding: 20px 0;
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 300;
+      cursor: pointer;
+    }
+
+    .Bars {
+      display: none;
+    }
+    .adoption {
+      display: none;
+    }
+
+    .My-adopt {
+      position: relative;
+      &:hover {
+        .adoption {
+          display: block;
+          li {
+            &:hover {
+              a {
+                background-color: rgb(117, 113, 113);
+              }
+            }
+          }
+        }
+      }
+    }
+    .adoption {
+      position: absolute;
+      z-index: 1;
+      background-color: white;
+      padding: 0 10px;
+      width: 150px;
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: end;
+
+      a {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    .container {
+      .Bars {
+        display: block;
+        font-size: 50px;
+      }
+      .Firstul {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1;
+        background-color: white;
+        width: 100%;
+        padding:20px 15%;
+      }
+    }
+  }
+}

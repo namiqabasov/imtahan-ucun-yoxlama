@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+ol {
+  text-decoration: none;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  width: 100%;
+}
+header .Media {
+  background-color: rgb(141, 34, 34);
+}
+header .Media .Myicon {
+  display: flex;
+  gap: 10px;
+}
+header .Media .Myicon i {
+  transition: 0.5s;
+}
+header .Media .Myicon i:hover {
+  color: white;
+}
+header .Media .My-link {
+  display: flex;
+}
+header .Media .My-link a {
+  transition: 0.5s;
+  padding: 9px 10px;
+}
+header .Media .My-link a:hover {
+  color: white;
+}
+header .Media .My-link .Login {
+  background-color: rgb(255, 145, 0);
+}
+header .Media .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+  position: relative;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container h1 {
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+}
+nav .container .Bars {
+  display: none;
+}
+nav .container .adoption {
+  display: none;
+}
+nav .container .My-adopt {
+  position: relative;
+}
+nav .container .My-adopt:hover .adoption {
+  display: block;
+}
+nav .container .My-adopt:hover .adoption li:hover a {
+  background-color: rgb(117, 113, 113);
+}
+nav .container .adoption {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 0 10px;
+  width: 150px;
+}
+nav .container ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+nav .container ul a {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  nav .container .Bars {
+    display: block;
+    font-size: 50px;
+  }
+  nav .container .Firstul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    padding: 20px 15%;
+  }
+}
+main .MY-nedsimg .my-imgMark {
+  max-width: 600px;
+  top: 0;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+main .MY-nedsimg .my-imgMark h5 {
+  font-family: cursive;
+}
+main .MY-nedsimg .my-imgMark h2 {
+  font-size: 44px;
+  text-align: start;
+}
+main .MY-nedsimg .my-imgMark p {
+  text-align: start;
+}
+main .MY-nedsimg .my-imgMark button {
+  border: 0;
+  border-radius: 4px;
+  background-color: rgb(253, 122, 0);
+  padding: 10px 20px;
+  color: white;
+}
+main .Steps-to .container {
+  padding: 200px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .Steps-to .container .my-family {
+  max-width: 445px;
+}
+main .Steps-to .container .my-family #Layer_1 {
+  max-width: 445px;
+}
+main .Steps-to .container .my-family button {
+  border: 3px solid orangered;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: orangered;
+  transition: 0.5s;
+}
+main .Steps-to .container .my-family button:hover {
+  background-color: orangered;
+  color: white;
+}
+main .Steps-to .container .fosterchild {
+  max-width: 454px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}/*# sourceMappingURL=main.css.map */
