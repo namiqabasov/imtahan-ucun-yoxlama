@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  transition: 0.5s;
+  background-color: white;
+  z-index: 1;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+nav .container .my-bars {
+  display: none;
+}
+nav .container ul {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  nav .container .my-bars {
+    display: block;
+  }
+  nav .container .my-bars button {
+    font-size: 32px;
+    background: none;
+    border: 0;
+    font-family: "Courier New", Courier, monospace;
+  }
+  nav .container ul {
+    display: none;
+  }
+}
+main .bestweb {
+  padding: 200px 0;
+  background: url(https://preview.colorlib.com/theme/drimo/drimo/img/banner/server-banner.jpg.webp);
+}
+main .bestweb .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .bestweb .container .comment {
+  max-width: 800px;
+}
+main .bestweb .container .comment p {
+  max-width: 500px;
+  color: white;
+}
+main .bestweb .container .comment .buttonstart {
+  padding: 50px 0;
+}
+main .bestweb .container .comment .buttonstart button {
+  border: 0;
+  background-color: orangered;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+main .bestweb .container h2 {
+  color: white;
+  font-size: 56px;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .bestweb .container h2 span:before {
+  content: "Special Offer Now $10 ";
+  color: #fff;
+  background: #fc6428;
+  position: absolute;
+  left: 170px;
+  top: -100px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-size: 36px;
+  padding: 20px 20px;
+}
+main .bestweb .container h3 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 30px 0;
+}
+main .bestweb .container .summo {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+main .bestweb .container .summo p {
+  cursor: pointer;
+  max-width: 150px;
+}
+main .bestweb .container .myimg {
+  max-width: 300px;
+}
+main .bestweb .container .myimg img {
+  width: 100%;
+}
+main .my-api .container .SERVICE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+main .my-api .container .SERVICE hr {
+  height: 4px;
+  width: 80px;
+  background-color: black;
+}
+main .my-api .container .SERVICE h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+main .my-api .container .SERVICE p {
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+}
+main .my-api .container .may-Cloud {
+  display: grid;
+  padding: 50px 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main .my-api .container .may-Cloud .newdiv {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main .my-api .container .may-Cloud .newdiv .mytag {
+  font-size: 24px;
+  font-weight: 300;
+}
+main .my-api .container .may-Cloud .newdiv p {
+  text-align: center;
+  max-width: 200px;
+  opacity: 0.7;
+}
+main .CLIENT {
+  background-color: rgba(0, 183, 255, 0.582);
+  width: 100%;
+  padding: 100px 0;
+}
+main .CLIENT .container .clientname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .CLIENT .container .clientname h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 300;
+}
+main .CLIENT .container .clientname hr {
+  border: 0;
+  height: 4px;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+}
+main .CLIENT .container .clientname p {
+  color: white;
+  font-size: 16px;
+  max-width: 500px;
+  text-align: center;
+}
+main .CLIENT .container .project {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .CLIENT .container .project .myimg {
+  display: flex;
+  align-items: center;
+}
+main .CLIENT .container .project .myimg i {
+  color: rgba(2, 217, 255, 0.705);
+  font-size: 56px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  border: 5px solid rgba(65, 247, 247, 0.911);
+}
+main .CLIENT .container .project .myimg .number p {
+  color: white;
+}
+main .CLIENT .container .project .myimg .number .first {
+  font-size: 32px;
+}
+main .news .container .clientname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 0;
+}
+main .news .container .clientname h2 {
+  font-size: 32px;
+  opacity: 0.7;
+}
+main .news .container .clientname hr {
+  border: 0;
+  height: 4px;
+  width: 80px;
+  background-color: black;
+}
+main .news .container .clientname p {
+  opacity: 0.7;
+  text-align: center;
+  max-width: 400px;
+}
+main .news .container .projact {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .news .container .projact .myimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(12, 11, 10, 0.13);
+  gap: 30px;
+  padding-bottom: 30px;
+  max-width: 360px;
+  width: 100%;
+}
+main .news .container .projact .myimg .number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .news .container .projact .myimg .number p {
+  opacity: 0.7;
+}
+main .news .container .projact .myimg .number .first {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 10px 0;
+}/*# sourceMappingURL=main.css.map */

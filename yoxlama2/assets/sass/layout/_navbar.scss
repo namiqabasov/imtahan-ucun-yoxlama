@@ -1,0 +1,43 @@
+nav {
+  position: sticky;
+  top: 0px;
+  transition: 0.5s;
+  background-color: white;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    .my-bars {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    .container {
+      .my-bars {
+        display: block;
+        button {
+          font-size: 32px;
+          background: none;
+          border: 0;
+          font-family: "Courier New", Courier, monospace;
+        }
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+}
