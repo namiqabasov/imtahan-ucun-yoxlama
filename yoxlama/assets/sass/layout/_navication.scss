@@ -7,15 +7,19 @@ header {
     .Myicon {
       display: flex;
       gap: 10px;
+
       i {
         transition: 0.5s;
+
         &:hover {
           color: white;
         }
       }
     }
+
     .My-link {
       display: flex;
+
       a {
         transition: 0.5s;
         padding: 9px 10px;
@@ -24,10 +28,12 @@ header {
           color: white;
         }
       }
+
       .Login {
         background-color: rgb(255, 145, 0);
       }
     }
+
     .container {
       display: flex;
       justify-content: space-between;
@@ -40,6 +46,7 @@ header {
 nav {
   padding: 20px 0;
   position: relative;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -54,30 +61,44 @@ nav {
     .Bars {
       display: none;
     }
+
     .adoption {
       display: none;
     }
 
     .My-adopt {
       position: relative;
+
       &:hover {
         .adoption {
           display: block;
+
           li {
+            width: 100%;
+            transition: 0.5s;
+            padding: 10px;
+            border-radius: 4px;
+
             &:hover {
+              background-color: orangered;
+
               a {
-                background-color: rgb(117, 113, 113);
+                color: black;
               }
             }
+
+
+
           }
         }
       }
     }
+
     .adoption {
       position: absolute;
       z-index: 1;
       background-color: white;
-      padding: 0 10px;
+      padding: 0px;
       width: 150px;
     }
 
@@ -101,6 +122,7 @@ nav {
         display: block;
         font-size: 50px;
       }
+
       .Firstul {
         display: none;
         position: absolute;
@@ -109,7 +131,7 @@ nav {
         z-index: 1;
         background-color: white;
         width: 100%;
-        padding:20px 15%;
+        padding: 20px 15%;
       }
     }
   }

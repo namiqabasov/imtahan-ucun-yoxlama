@@ -81,14 +81,23 @@ nav .container .My-adopt {
 nav .container .My-adopt:hover .adoption {
   display: block;
 }
+nav .container .My-adopt:hover .adoption li {
+  width: 100%;
+  transition: 0.5s;
+  padding: 10px;
+  border-radius: 4px;
+}
+nav .container .My-adopt:hover .adoption li:hover {
+  background-color: orangered;
+}
 nav .container .My-adopt:hover .adoption li:hover a {
-  background-color: rgb(117, 113, 113);
+  color: black;
 }
 nav .container .adoption {
   position: absolute;
   z-index: 1;
   background-color: white;
-  padding: 0 10px;
+  padding: 0px;
   width: 150px;
 }
 nav .container ul {
@@ -171,4 +180,31 @@ main .Steps-to .container .fosterchild {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+main .img-gallery .Children-galery {
+  display: flex;
+}
+main .img-gallery .Children-galery button {
+  padding: 0 10px;
+  font-size: 32px;
+  border: 0;
+  background: none;
+}
+main .img-gallery .Children-galery .btn-left {
+  transform: rotateZ(180deg);
+}
+main .img-gallery .Children-galery .galery-const {
+  border: 1px solid black;
+  overflow: hidden;
+}
+main .img-gallery .Children-galery .galery-const .galery-low {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  width: auto;
+  transition: 0.5s;
+}
+main .img-gallery .Children-galery .galery-const .galery-low img {
+  max-width: 350px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

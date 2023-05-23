@@ -8,16 +8,20 @@ main {
       flex-direction: column;
       align-items: start;
       justify-content: center;
+
       h5 {
         font-family: cursive;
       }
+
       h2 {
         font-size: 44px;
         text-align: start;
       }
+
       p {
         text-align: start;
       }
+
       button {
         border: 0;
         border-radius: 4px;
@@ -27,14 +31,18 @@ main {
       }
     }
   }
+
   .Steps-to {
     .container {
       padding: 200px 0;
+
       .my-family {
         max-width: 445px;
+
         #Layer_1 {
           max-width: 445px;
         }
+
         button {
           border: 3px solid orangered;
           border-radius: 5px;
@@ -42,6 +50,7 @@ main {
 
           color: orangered;
           transition: 0.5s;
+
           &:hover {
             background-color: orangered;
             color: white;
@@ -61,4 +70,44 @@ main {
       }
     }
   }
+
+  .img-gallery {
+    .Children-galery {
+      display: flex;
+
+      button {
+        padding: 0 10px;
+        font-size: 32px;
+        border: 0;
+        background: none;
+      }
+
+      .btn-left {
+        transform: rotateZ(180deg);
+
+      }
+
+      .galery-const {
+        border: 1px solid black;
+        overflow: hidden;
+
+        .galery-low {
+          position: relative;
+          display: flex;
+          gap: 20px;
+          width: auto;
+          transition: 0.5s;
+
+          img {
+            max-width: 350px;
+            width: 100%;
+          }
+
+        }
+      }
+
+    }
+
+  }
+
 }
