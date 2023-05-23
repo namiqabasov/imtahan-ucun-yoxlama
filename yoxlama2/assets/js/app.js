@@ -63,35 +63,32 @@ const obj = {
 };
 
 async function myfetch() {
-  const responsedata = await fetch(
-    "https://northwind.vercel.app/api/categories"
-  );
+  const responsedata = await fetch("http://127.0.0.1:5500/db.json");
   const data = await responsedata.json();
 
-  data.forEach((element) => {
-    if (element.id === "children") {
-      element.img.forEach((e) => {
-        newcreat(e);
-      });
-    }
+  data.post.forEach((element) => {
+    console.log(element);
+    element.img.forEach((e) => {
+      newcreat(e);
+    });
   });
   console.log("salam");
 }
 
-function myfetchpost(obj) {
-  fetch("https://northwind.vercel.app/api/categories", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(obj),
-  });
-}
-function myfetch(obj) {
-  fetch("https://northwind.vercel.app/api/categories/children", {
-    method: "DELETE",
-  });
-}
+// function myfetchpost(obj) {
+//   fetch("https://northwind.vercel.app/api/categories", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(obj),
+//   });
+// }
+// function myfetch(obj) {
+//   fetch("https://northwind.vercel.app/api/categories/children", {
+//     method: "DELETE",
+//   });
+// }
 // async function myfetch() {
 //   const responsedata = await fetch(
 //     "https://northwind.vercel.app/api/categories"
