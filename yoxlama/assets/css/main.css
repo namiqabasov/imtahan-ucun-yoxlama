@@ -204,7 +204,14 @@ main .img-gallery .Children-galery .galery-const .galery-low {
   width: auto;
   transition: 0.5s;
 }
-main .img-gallery .Children-galery .galery-const .galery-low img {
-  max-width: 350px;
+main .img-gallery .Children-galery .galery-const .galery-low .newdiv {
+  max-width: 450px;
   width: 100%;
+}
+main .img-gallery .Children-galery .galery-const .galery-low .newdiv .myname {
+  font-size: 24px;
+  font-weight: bold;
+}
+main .img-gallery .Children-galery .galery-const .galery-low .newdiv img {
+  width: 450px;
 }/*# sourceMappingURL=main.css.map */
