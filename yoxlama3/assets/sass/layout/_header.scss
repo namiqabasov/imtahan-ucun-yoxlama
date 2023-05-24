@@ -1,0 +1,71 @@
+header {
+  background: url(https://preview.colorlib.com/theme/villa/img/hero_1.jpg);
+  background-size: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .mywelcome {
+    display: flex;
+    flex-direction: column;
+    padding: 20%;
+    background-color: rgba(0, 0, 0, 0.24);
+    gap: 30px;
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-family: cursive;
+    }
+    p {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 32px;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 0;
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .expor {
+        background-color: rgba(247, 0, 185, 0.712);
+        transition: 0.5s;
+        &:hover {
+          background-color: rgba(247, 0, 185, 0.993);
+        }
+      }
+      .dowloand {
+        transition: 0.5s;
+
+        background: none;
+        border: 1px solid white;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+    header{
+        background-size: 300%;
+        .mywelcome{
+          h1{
+            font-size: 40px;
+          }
+        }
+    }
+}

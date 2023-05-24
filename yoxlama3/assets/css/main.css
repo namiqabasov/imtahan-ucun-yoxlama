@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+ol {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.mycontainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav .mycontainer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.24);
+  justify-content: space-between;
+}
+nav .mycontainer h2 {
+  color: white;
+  font-family: cursive;
+}
+nav .mycontainer .btnAdd {
+  background: none;
+  color: white;
+  border: 0;
+  font-size: 52px;
+}
+nav .mycontainer .my-ul {
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: space-between;
+  padding: 20px;
+  top: 0;
+  left: 0;
+}
+nav .mycontainer .my-ul .btnRemov {
+  background: none;
+  border: 0;
+  font-size: 32px;
+}
+nav .mycontainer .my-ul .about {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  padding-left: 100px;
+}
+nav .mycontainer .my-ul .about ul {
+  font-size: 45px;
+}
+nav .mycontainer .my-ul .about ul li {
+  margin-bottom: 20px;
+  width: 0;
+  background-color: rgba(255, 0, 0, 0.596);
+  transition: 0.5s;
+}
+nav .mycontainer .my-ul .about ul li:hover {
+  width: 100%;
+}
+nav .mycontainer .my-ul .about div {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: start;
+}
+nav .mycontainer .my-ul .about div div {
+  display: block;
+}
+nav .mycontainer .my-ul .about div div p {
+  padding-bottom: 20px;
+  font-size: 14px;
+  max-width: 200px;
+}
+nav .mycontainer .my-ul .about div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+}
+nav .mycontainer .my-ul .about div ul li:hover {
+  width: 0;
+}
+nav .mycontainer .display {
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  nav .mycontainer .my-ul .about {
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+  }
+  nav .mycontainer .my-ul .about ul li {
+    margin: 0px;
+  }
+}
+
+main .Visit .mycontainer .myimg-cart {
+  padding: 200px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .Visit .mycontainer .myimg-cart .inimg {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 255px;
+  width: 100%;
+}
+main .Visit .mycontainer .myimg-cart .inimg img {
+  width: 100%;
+}
+main .Visit .mycontainer .myimg-cart .inimg .myicon {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+main .Visit .mycontainer .myimg-cart .inimg .myicon p {
+  position: absolute;
+  right: 0;
+}
+main .Visit .mycontainer .myimg-cart .inimg .myicon i {
+  color: rgb(255, 17, 0);
+  font-size: 13px;
+  margin-right: 3px;
+}
+@media screen and (max-width: 768px) {
+  main .Visit .mycontainer .myimg-cart {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .gorgeous .mycontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .gorgeous .mycontainer .myname {
+  max-width: 700px;
+}
+main .gorgeous .mycontainer .myname h2 {
+  font-size: 56px;
+  text-align: center;
+}
+main .gorgeous .mycontainer .myname p {
+  font-size: 24px;
+  opacity: 0.7;
+  text-align: center;
+  padding: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  main .mycontainer .myname h2 {
+    font-size: 32px;
+  }
+}
+main .Recent {
+  padding: 200px 0;
+}
+main .Recent .mycontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .Recent .mycontainer .myname {
+  max-width: 700px;
+}
+main .Recent .mycontainer .myname h2 {
+  font-size: 56px;
+  text-align: center;
+}
+main .Recent .mycontainer .myname p {
+  font-size: 24px;
+  opacity: 0.7;
+  text-align: center;
+  padding: 20px 0;
+}
+main .Recent .mycontainer .newimg {
+  display: flex;
+  gap: 20px;
+}
+main .Recent .mycontainer .newimg .inimg {
+  max-width: 329px;
+  width: 100%;
+}
+main .Recent .mycontainer .newimg .inimg img {
+  width: 100%;
+}
+main .Recent .mycontainer .newimg .inimg .first {
+  opacity: 0.7;
+  font-size: 12px;
+}
+main .Recent .mycontainer .newimg .inimg .end {
+  font-size: 22px;
+}
+main .Recent .mycontainer .newimg .inimg .end:hover {
+  cursor: pointer;
+  color: rgba(197, 8, 8, 0.836);
+}
+@media screen and (max-width: 768px) {
+  main .Recent .mycontainer .newimg {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+header {
+  background: url(https://preview.colorlib.com/theme/villa/img/hero_1.jpg);
+  background-size: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header .mywelcome {
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+  background-color: rgba(0, 0, 0, 0.24);
+  gap: 30px;
+}
+header .mywelcome h1 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: cursive;
+}
+header .mywelcome p {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+header .mywelcome div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header .mywelcome div button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+header .mywelcome div .expor {
+  background-color: rgba(247, 0, 185, 0.712);
+  transition: 0.5s;
+}
+header .mywelcome div .expor:hover {
+  background-color: rgba(247, 0, 185, 0.993);
+}
+header .mywelcome div .dowloand {
+  transition: 0.5s;
+  background: none;
+  border: 1px solid white;
+}
+header .mywelcome div .dowloand:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    background-size: 300%;
+  }
+  header .mywelcome h1 {
+    font-size: 40px;
+  }
+}
+footer {
+  padding: 100px 0 200px 0;
+  background-color: black;
+}
+footer .mycontainer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+footer .mycontainer .myp {
+  display: flex;
+}
+footer .mycontainer .myp .myfoot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(255, 255, 255, 0.671);
+}
+footer .mycontainer .myp .color {
+  cursor: pointer;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.671);
+}
+footer .mycontainer .myp .color:hover {
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=main.css.map */
