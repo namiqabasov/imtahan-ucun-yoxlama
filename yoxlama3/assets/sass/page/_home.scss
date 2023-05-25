@@ -1,4 +1,6 @@
 main {
+
+
   .Visit {
     .mycontainer {
       .myimg-cart {
@@ -6,23 +8,28 @@ main {
         display: flex;
         justify-content: space-between;
         gap: 20px;
+
         .inimg {
           display: flex;
           flex-direction: column;
           gap: 20px;
           max-width: 255px;
           width: 100%;
+
           img {
             width: 100%;
           }
+
           .myicon {
             display: flex;
             width: 100%;
             position: relative;
+
             p {
               position: absolute;
               right: 0;
             }
+
             i {
               color: rgb(255, 17, 0);
               font-size: 13px;
@@ -33,6 +40,7 @@ main {
       }
     }
   }
+
   @media screen and (max-width: 768px) {
     .Visit {
       .mycontainer {
@@ -49,12 +57,15 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .myname {
         max-width: 700px;
+
         h2 {
           font-size: 56px;
           text-align: center;
         }
+
         p {
           font-size: 24px;
           opacity: 0.7;
@@ -64,6 +75,7 @@ main {
       }
     }
   }
+
   @media screen and (max-width: 768px) {
     .mycontainer {
       .myname {
@@ -76,6 +88,7 @@ main {
 
   .Recent {
     padding: 200px 0;
+
     .mycontainer {
       display: flex;
       flex-direction: column;
@@ -83,10 +96,12 @@ main {
 
       .myname {
         max-width: 700px;
+
         h2 {
           font-size: 56px;
           text-align: center;
         }
+
         p {
           font-size: 24px;
           opacity: 0.7;
@@ -98,18 +113,23 @@ main {
       .newimg {
         display: flex;
         gap: 20px;
+
         .inimg {
           max-width: 329px;
           width: 100%;
+
           img {
             width: 100%;
           }
+
           .first {
             opacity: 0.7;
             font-size: 12px;
           }
+
           .end {
             font-size: 22px;
+
             &:hover {
               cursor: pointer;
               color: rgba(197, 8, 8, 0.836);
@@ -119,6 +139,7 @@ main {
       }
     }
   }
+
   @media screen and (max-width: 768px) {
     .Recent {
       .mycontainer {
