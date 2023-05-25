@@ -1,0 +1,30 @@
+main {
+  .apiCard {
+    .mycontainer {
+      .my-img {
+        display: flex;
+        justify-content: space-between;
+
+        .newimg {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          max-width: 300px;
+          padding: 100px 0;
+          // .myp {
+          // }
+          // .myicon {
+          // }
+          .mybtn {
+            button {
+              margin: 5px;
+              background-color: orange;
+              border: 0;
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

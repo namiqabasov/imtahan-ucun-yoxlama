@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+ol {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+.mycontainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: url(https://preview.colorlib.com/theme/theestate/images/home_slider_bcg.jpg);
+  background-size: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+}
+header .mycontainer .my-centername {
+  margin-top: 20%;
+}
+header .mycontainer .my-centername h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  border-bottom: 1px solid white;
+  position: sticky;
+  top: 0;
+}
+nav .mycontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+nav .mycontainer .myicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+nav .mycontainer .myicon img {
+  max-width: 74px;
+}
+nav .mycontainer .myicon p {
+  color: white;
+}
+nav .mycontainer .my-number p {
+  background-color: rgb(255, 102, 0);
+  padding: 5px 10px 5px 20px;
+  color: white;
+}
+nav .mycontainer .my-ul ul {
+  display: flex;
+  gap: 40px;
+}
+nav .mycontainer .my-ul ul a {
+  font-size: 14px;
+  transition: 0.5s;
+}
+nav .mycontainer .my-ul ul a:hover {
+  color: orangered;
+}
+nav .mycontainer .my-bars {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav .mycontainer .my-ul {
+    display: none;
+  }
+  nav .mycontainer .my-bars {
+    display: block;
+  }
+  nav .mycontainer .my-number {
+    display: none;
+  }
+}
+main .apiCard .mycontainer .my-img {
+  display: flex;
+  justify-content: space-between;
+}
+main .apiCard .mycontainer .my-img .newimg {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  padding: 100px 0;
+}
+main .apiCard .mycontainer .my-img .newimg .mybtn button {
+  margin: 5px;
+  background-color: orange;
+  border: 0;
+  padding: 5px 10px;
+}/*# sourceMappingURL=main.css.map */
