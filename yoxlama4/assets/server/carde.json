@@ -32,6 +32,17 @@
       "buttonname3": "Garden",
       "buttonname4": "Patio",
       "buttonname5": "Hard Wood Floor"
+    },
+    {
+      "id": "4",
+      "img": "https://preview.colorlib.com/theme/theestate/images/featured_2.jpg",
+      "name": "celala",
+      "input": "Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.",
+      "buttonname1": "Hottub",
+      "buttonname2": "Swimming Pool",
+      "buttonname3": "Garden",
+      "buttonname4": "Patio",
+      "buttonname5": "Hard Wood Floor"
     }
   ]
 }

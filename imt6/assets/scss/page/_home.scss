@@ -1,0 +1,329 @@
+main {
+
+
+
+    .Latest {
+        .mycontainer {
+
+
+            .name {
+                padding: 100px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 44px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.629);
+                    max-width: 600px;
+                }
+            }
+
+            .sliders {
+                padding-top: 100px;
+                display: flex;
+                gap: 20px;
+                z-index: -2;
+
+                .cards {
+                    max-width: 400px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+
+                    img {
+                        max-width: 400px;
+                        width: 100%;
+                        transition: 0.5s;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .time {
+                        background-color: black;
+                        color: white;
+                        padding: 10px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .topics {
+        .mycontainer {
+            .name {
+                padding: 100px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 44px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.629);
+                    max-width: 600px;
+                }
+            }
+
+            .myaddiction {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                .cards {
+                    display: flex;
+                    gap: 20px;
+                    max-width: 600px;
+                    width: 100%;
+                    position: relative;
+
+                    img {
+                        transition: 0.5s;
+                        width: 100%;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .time {
+                        position: absolute;
+                        left: 0;
+                        background-color: black;
+                        color: white;
+                        padding: 20px;
+                    }
+
+                    .hilton {
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding: 20px 0;
+                    }
+
+                    .lorem {
+                        padding: 20px 0;
+                    }
+
+                    .icons {
+                        display: flex;
+
+                        i {
+                            padding-left: 20px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+
+
+
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 80px 0;
+
+                button {
+                    border: 0;
+                    background-color: rgba(2, 137, 199, 0.785);
+                    padding: 15px 30px;
+                    border-radius: 15px;
+                    color: white;
+                    transition: 0.1s;
+                    border: 1px solid white;
+
+
+                    &:hover {
+                        background-color: white;
+                        color: rgba(2, 137, 199, 0.785);
+                        border: 1px solid;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width:900px) {
+
+        .topics {
+            .mycontainer {
+
+                .myaddiction {
+                    grid-template-columns: 1fr;
+
+                    .cards {
+                        width: 100%;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        .topics {
+            .mycontainer {
+
+                .myaddiction {
+                    grid-template-columns: 1fr;
+
+                    .cards {
+                        width: 70%;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width:468px) {
+
+        .topics {
+            .mycontainer {
+
+                .myaddiction {
+                    grid-template-columns: 1fr;
+
+                    .cards {
+                        width: 20%;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width:368px) {
+
+        .topics {
+            .mycontainer {
+
+                .myaddiction {
+                    grid-template-columns: 1fr;
+
+                    .cards {
+                        width: 10%;
+                        height: auto;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+
+
+    .api {
+        .mycontainer {
+            padding-bottom: 200px;
+
+            .name {
+                padding: 100px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 44px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.629);
+                    max-width: 600px;
+                }
+            }
+
+            .mycards {
+                display: flex;
+                gap: 20px;
+
+                .cards {
+                    max-width: 300px;
+                    width: 100%;
+
+                    button {
+                        padding: 5px 10px;
+                        color: black;
+                        background-color: white;
+                        border: 1px solid white;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 255, 0.307);
+                            color: white;
+                            border: 1px solid;
+
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        transition: 0.1s;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .time {
+                        color: white;
+                        background-color: black;
+                        padding: 3px 10px;
+                        width: 100px;
+                    }
+
+                    .hilton {
+                        font-size: 18px;
+                    }
+
+                    .lorem {
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.456);
+                    }
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .mycards {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

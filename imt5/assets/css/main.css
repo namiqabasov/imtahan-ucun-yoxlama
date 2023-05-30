@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+ol {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.mycontainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+}
+header .aboutbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 3%;
+}
+header .aboutbar .number {
+  display: flex;
+  gap: 10px;
+}
+header .aboutbar .number p {
+  color: white;
+  padding-right: 10px;
+}
+header .aboutbar .number p i {
+  color: rgb(170, 74, 1);
+  padding-right: 10px;
+}
+header .aboutbar .icons {
+  display: flex;
+  gap: 30px;
+}
+header .aboutbar .icons i {
+  color: white;
+  transition: 0.7s;
+  padding: 20px;
+}
+header .aboutbar .icons i:hover {
+  transform: rotateY(180deg);
+  color: rgb(170, 74, 1);
+}
+@media screen and (max-width: 768px) {
+  header .aboutbar {
+    display: none;
+  }
+}
+header nav {
+  z-index: 1;
+}
+header nav .mycontainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+header nav .mycontainer .Bars {
+  display: none;
+}
+header nav .mycontainer ul {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+header nav .mycontainer ul .bligs {
+  width: 0;
+  opacity: 0;
+}
+header nav .mycontainer ul .myyblog {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  header nav .mycontainer ul .myyblog:hover .bligs {
+    padding-top: 40px;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transition: 1s;
+  }
+  header nav .mycontainer ul .myyblog:hover .bligs li {
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+  }
+  header nav .mycontainer ul .myyblog:hover .bligs li a {
+    color: white;
+    transition: 0.3s;
+  }
+  header nav .mycontainer ul .myyblog:hover .bligs li a:hover {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav .mycontainer {
+    display: block;
+  }
+  header nav .mycontainer ul {
+    height: 0;
+    opacity: 0;
+    top: -200px;
+  }
+  header nav .mycontainer .display {
+    position: absolute;
+    display: block;
+    top: 95px;
+    background-color: bisque;
+    width: 80%;
+    left: auto;
+    transition: 0.5s;
+    height: auto;
+    opacity: 1;
+  }
+  header nav .mycontainer .display li:hover {
+    background-color: rgba(90, 81, 81, 0.767);
+  }
+  header nav .mycontainer .display .myyblog {
+    padding: 0;
+    height: auto;
+  }
+  header nav .mycontainer .display .myyblog .bligs {
+    width: 100%;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    padding-left: 10%;
+  }
+  header nav .mycontainer .Bars {
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 10px;
+  }
+  header nav .mycontainer .Bars p {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  header nav .mycontainer .Bars i {
+    padding-left: 10px;
+    font-size: 32px;
+    color: white;
+  }
+}
+
+main .help {
+  background-image: url(https://preview.colorlib.com/theme/consultingbiz/assets/img/hero/h1_hero.jpg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+main .help .mycontainer {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .help .mycontainer .comed {
+  color: rgba(182, 17, 2, 0.808);
+  display: flex;
+  align-items: center;
+}
+main .help .mycontainer .comed hr {
+  height: 2px;
+  width: 20px;
+  background-color: rgba(182, 17, 2, 0.808);
+}
+main .help .mycontainer h1 {
+  font-size: 56px;
+}
+main .help .mycontainer .mybtn {
+  width: 200px;
+  position: relative;
+  padding: 20px;
+  border: 0;
+}
+main .help .mycontainer .mybtn p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  transition: 0.5s;
+  font-weight: bold;
+}
+main .help .mycontainer .mybtn span {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: orangered;
+  transition: 0.5s;
+}
+main .help .mycontainer .mybtn:hover span {
+  width: 0;
+}
+main .help .mycontainer .mybtn:hover p {
+  color: black;
+}
+main .best {
+  display: flex;
+  position: relative;
+}
+main .best .redbar {
+  background-color: red;
+  width: 60%;
+  height: auto;
+}
+main .best .bluebar {
+  background-color: rgb(1, 53, 70);
+  padding: 200px 100px 100px 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .best .bluebar .comed {
+  color: rgba(255, 255, 255, 0.808);
+  display: flex;
+  align-items: center;
+}
+main .best .bluebar .comed hr {
+  margin-right: 10px;
+  height: 2px;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+main .best .bluebar h2 {
+  font-size: 56px;
+  color: white;
+}
+main .best .bluebar .last {
+  font-size: 23px;
+  color: white;
+}
+main .best .bluebar .input {
+  color: white;
+}
+main .best .bluebar img {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  width: 30%;
+}
+main .best .bluebar .mybtn {
+  width: 200px;
+  position: relative;
+  padding: 20px;
+  border: 0;
+}
+main .best .bluebar .mybtn p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  transition: 0.5s;
+  font-weight: bold;
+}
+main .best .bluebar .mybtn span {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: orangered;
+  transition: 0.5s;
+}
+main .best .bluebar .mybtn:hover span {
+  width: 0;
+}
+main .best .bluebar .mybtn:hover p {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  main .best .redbar {
+    display: none;
+  }
+  main .best .bluebar {
+    padding: 100px;
+  }
+  main .best .bluebar p button h2 {
+    text-align: start;
+    margin: 0 auto;
+  }
+  main .best .bluebar p h2 {
+    max-width: 400px;
+    width: 100%;
+  }
+  main .best .bluebar img {
+    position: static;
+    margin: 0 auto;
+    max-width: 560px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

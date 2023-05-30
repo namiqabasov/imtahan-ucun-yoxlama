@@ -1,0 +1,48 @@
+footer {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.842);
+
+    .mycontainer {
+        display: flex;
+        justify-content: space-between;
+
+        .myp {
+            color: white;
+            display: flex;
+
+            span {
+                color: rgba(0, 76, 255, 0.627);
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(0, 76, 255);
+
+                }
+            }
+
+            i {
+                color: rgb(1, 60, 237);
+            }
+        }
+
+        .newicon {
+            display: flex;
+            gap: 20px;
+
+            i {
+                color: white;
+                background-color: black;
+                padding: 10px;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        .mycontainer {
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+nav {
+    top: 0;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    .mycontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+
+            a {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                transition: 0.3s;
+
+                &:hover {
+
+                    color: rgb(0, 191, 255);
+
+                }
+            }
+
+
+            .mypage {
+                position: relative;
+
+                i {
+                    padding: 10px;
+                    transform: rotateZ(-90deg);
+                }
+
+                .catecory {
+                    opacity: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+
+                    position: absolute;
+                    background-color: white;
+                    padding: 20px 60px 10px 10px;
+                    left: -10px;
+                }
+
+                &:hover {
+
+                    .catecory {
+                        opacity: 1;
+                        transition: 0.5s;
+
+
+                    }
+                }
+            }
+        }
+
+        .bars {
+            display: none;
+        }
+
+
+    }
+
+    @media screen and (max-width:768px) {
+
+        .mycontainer {
+            position: relative;
+
+            .myul {
+                display: none;
+            }
+
+            .display {
+                display: block;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                height: 350px;
+                overflow: auto;
+                width: 100%;
+                background-color: white;
+                padding: 20px;
+                transition: 0.5s;
+
+
+                li {
+                    padding-bottom: 30px;
+                }
+
+                .mypage {
+                    .catecory {
+                        display: none;
+
+                    }
+
+                    &:hover {
+                        .catecory {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+
+
+            .bars {
+                display: block;
+
+                .mybtn {
+                    padding: 3px;
+                }
+
+                i {
+                    font-size: 32px;
+                }
+            }
+        }
+
+    }
+}

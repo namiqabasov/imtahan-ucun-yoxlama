@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+ol {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+.mycontainer {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  top: 0;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+nav .mycontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .mycontainer ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .mycontainer ul a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav .mycontainer ul a:hover {
+  color: rgb(0, 191, 255);
+}
+nav .mycontainer ul .mypage {
+  position: relative;
+}
+nav .mycontainer ul .mypage i {
+  padding: 10px;
+  transform: rotateZ(-90deg);
+}
+nav .mycontainer ul .mypage .catecory {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  background-color: white;
+  padding: 20px 60px 10px 10px;
+  left: -10px;
+}
+nav .mycontainer ul .mypage:hover .catecory {
+  opacity: 1;
+  transition: 0.5s;
+}
+nav .mycontainer .bars {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  nav .mycontainer {
+    position: relative;
+  }
+  nav .mycontainer .myul {
+    display: none;
+  }
+  nav .mycontainer .display {
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 350px;
+    overflow: auto;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    transition: 0.5s;
+  }
+  nav .mycontainer .display li {
+    padding-bottom: 30px;
+  }
+  nav .mycontainer .display .mypage .catecory {
+    display: none;
+  }
+  nav .mycontainer .display .mypage:hover .catecory {
+    display: block;
+  }
+  nav .mycontainer .bars {
+    display: block;
+  }
+  nav .mycontainer .bars .mybtn {
+    padding: 3px;
+  }
+  nav .mycontainer .bars i {
+    font-size: 32px;
+  }
+}
+
+main .Latest .mycontainer .name {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .Latest .mycontainer .name h2 {
+  font-size: 44px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .Latest .mycontainer .name p {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.629);
+  max-width: 600px;
+}
+main .Latest .mycontainer .sliders {
+  padding-top: 100px;
+  display: flex;
+  gap: 20px;
+  z-index: -2;
+}
+main .Latest .mycontainer .sliders .cards {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .Latest .mycontainer .sliders .cards img {
+  max-width: 400px;
+  width: 100%;
+  transition: 0.5s;
+}
+main .Latest .mycontainer .sliders .cards img:hover {
+  transform: scale(1.05);
+}
+main .Latest .mycontainer .sliders .cards .time {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+main .topics .mycontainer .name {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .topics .mycontainer .name h2 {
+  font-size: 44px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .topics .mycontainer .name p {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.629);
+  max-width: 600px;
+}
+main .topics .mycontainer .myaddiction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+main .topics .mycontainer .myaddiction .cards {
+  display: flex;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+main .topics .mycontainer .myaddiction .cards img {
+  transition: 0.5s;
+  width: 100%;
+}
+main .topics .mycontainer .myaddiction .cards img:hover {
+  transform: scale(1.1);
+}
+main .topics .mycontainer .myaddiction .cards .time {
+  position: absolute;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+main .topics .mycontainer .myaddiction .cards .hilton {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+main .topics .mycontainer .myaddiction .cards .lorem {
+  padding: 20px 0;
+}
+main .topics .mycontainer .myaddiction .cards .icons {
+  display: flex;
+}
+main .topics .mycontainer .myaddiction .cards .icons i {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+main .topics .mycontainer .btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 0;
+}
+main .topics .mycontainer .btn button {
+  border: 0;
+  background-color: rgba(2, 137, 199, 0.785);
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: white;
+  transition: 0.1s;
+  border: 1px solid white;
+}
+main .topics .mycontainer .btn button:hover {
+  background-color: white;
+  color: rgba(2, 137, 199, 0.785);
+  border: 1px solid;
+}
+@media screen and (max-width: 900px) {
+  main .topics .mycontainer .myaddiction {
+    grid-template-columns: 1fr;
+  }
+  main .topics .mycontainer .myaddiction .cards {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .topics .mycontainer .myaddiction {
+    grid-template-columns: 1fr;
+  }
+  main .topics .mycontainer .myaddiction .cards {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 468px) {
+  main .topics .mycontainer .myaddiction {
+    grid-template-columns: 1fr;
+  }
+  main .topics .mycontainer .myaddiction .cards {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 368px) {
+  main .topics .mycontainer .myaddiction {
+    grid-template-columns: 1fr;
+  }
+  main .topics .mycontainer .myaddiction .cards {
+    width: 10%;
+    height: auto;
+  }
+}
+main .api .mycontainer {
+  padding-bottom: 200px;
+}
+main .api .mycontainer .name {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .api .mycontainer .name h2 {
+  font-size: 44px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .api .mycontainer .name p {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.629);
+  max-width: 600px;
+}
+main .api .mycontainer .mycards {
+  display: flex;
+  gap: 20px;
+}
+main .api .mycontainer .mycards .cards {
+  max-width: 300px;
+  width: 100%;
+}
+main .api .mycontainer .mycards .cards button {
+  padding: 5px 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+main .api .mycontainer .mycards .cards button:hover {
+  background-color: rgba(0, 0, 255, 0.307);
+  color: white;
+  border: 1px solid;
+}
+main .api .mycontainer .mycards .cards img {
+  width: 100%;
+  transition: 0.1s;
+}
+main .api .mycontainer .mycards .cards img:hover {
+  transform: scale(1.1);
+}
+main .api .mycontainer .mycards .cards .time {
+  color: white;
+  background-color: black;
+  padding: 3px 10px;
+  width: 100px;
+}
+main .api .mycontainer .mycards .cards .hilton {
+  font-size: 18px;
+}
+main .api .mycontainer .mycards .cards .lorem {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.456);
+}
+@media screen and (max-width: 768px) {
+  main .api .mycontainer .mycards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer {
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.842);
+}
+footer .mycontainer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .mycontainer .myp {
+  color: white;
+  display: flex;
+}
+footer .mycontainer .myp span {
+  color: rgba(0, 76, 255, 0.627);
+  cursor: pointer;
+}
+footer .mycontainer .myp span:hover {
+  color: rgb(0, 76, 255);
+}
+footer .mycontainer .myp i {
+  color: rgb(1, 60, 237);
+}
+footer .mycontainer .newicon {
+  display: flex;
+  gap: 20px;
+}
+footer .mycontainer .newicon i {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  footer .mycontainer {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 0;
+}
+form button {
+  padding: 5px 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+form button:hover {
+  color: white;
+  background-color: rgba(4, 104, 162, 0.69);
+  border: 1px solid;
+}
+form input {
+  padding: 5px 10px;
+}
+
+header {
+  background-image: url(https://preview.colorlib.com/theme/blogger/img/header-bg.jpg);
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+header .box .mycityname h1 {
+  font-size: 44px;
+  max-width: 700px;
+  color: white;
+  font-weight: bold;
+}
+header .box .myptag {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+header .box .myptag p {
+  color: white;
+}
+header .box .myptag .command i {
+  padding-left: 10px;
+  padding-right: 4px;
+  color: white;
+}
+header .box .myptag .myname {
+  display: flex;
+}
+header .box .myptag .myname img {
+  width: 40px;
+  height: 40px;
+}
+header .box .myptag .myname .marks {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 10px;
+}
+header .box .myptag .myname .marks .big {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-size: 200%;
+  }
+  header .box .mycityname h1 {
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */

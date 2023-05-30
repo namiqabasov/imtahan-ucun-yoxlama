@@ -1,6 +1,8 @@
 nav {
   border-bottom: 1px solid white;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+
   top: 0;
 
   .mycontainer {
@@ -8,18 +10,22 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 90px;
+
     .myicon {
       display: flex;
       flex-direction: column;
       align-items: center;
       cursor: pointer;
+
       img {
         max-width: 74px;
       }
+
       p {
         color: white;
       }
     }
+
     .my-number {
       p {
         background-color: rgb(255, 102, 0);
@@ -27,33 +33,45 @@ nav {
         color: white;
       }
     }
+
     .my-ul {
       ul {
         display: flex;
         gap: 40px;
+
         a {
           font-size: 14px;
           transition: 0.5s;
+
           &:hover {
             color: orangered;
           }
         }
       }
     }
+
     .my-bars {
       display: none;
     }
   }
 }
+
+.yenireng {
+  background-color: pink;
+  color: black;
+}
+
 @media screen and (max-width: 800px) {
   nav {
     .mycontainer {
       .my-ul {
         display: none;
       }
+
       .my-bars {
         display: block;
       }
+
       .my-number {
         display: none;
       }

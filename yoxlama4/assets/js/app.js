@@ -1,5 +1,17 @@
 const myImg = document.querySelector(".my-img");
 
+function myscrol() {
+  const ecran = window.scrollY;
+  console.log(ecran);
+  if (ecran < 150) {
+    document.querySelector("nav").classList.remove("yenireng");
+  } else {
+    document.querySelector("nav").classList.add("yenireng");
+  }
+}
+
+window.addEventListener("scroll", myscrol);
+
 async function myfetch() {
   const response = await fetch("http://localhost:3000/post1");
   const data = await response.json();
@@ -57,10 +69,9 @@ function newcrete(element) {
   const btnremov = document.createElement("button");
 
   btnremov.innerText = "REMOVE";
-    btnremov.addEventListener("click",function () {
-        
-    })
-
+  btnremov.addEventListener("click", function () {
+    fetchdelete(element.id);
+  });
 
   mydiv.append(myimg, newdiv, icon, btndiv, btnremov);
 
@@ -69,12 +80,49 @@ function newcrete(element) {
 
 myfetch();
 
-
 async function fetchdelete(element) {
-    
-    const response=await fetch("http://localhost:3000/post1",{
-        
-    })
-
+  const response = await fetch(`http://localhost:3000/post1/${element}`, {
+    method: "DELETE",
+  });
 }
 
+const myinput = document.querySelector("#myinput");
+const impid = document.querySelector("#impid");
+const img = document.querySelector("#img");
+const myform = document.querySelector(".myform");
+
+myform.addEventListener("submit", function () {
+  const obj = {
+    id: impid.value,
+    img: img.value,
+    name: myinput.value,
+    input:
+      "Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.",
+    buttonname1: "Hottub",
+    buttonname2: "Swimming Pool",
+    buttonname3: "Garden",
+    buttonname4: "Patio",
+    buttonname5: "Hard Wood Floor",
+  };
+
+  async function fetchpost() {
+    const response = await fetch(`http://localhost:3000/post1`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(obj),
+    });
+  }
+  fetchpost();
+});
+
+// async function fetchput(element) {
+//   const response = await fetch(`http://localhost:3000/post1/${element}`, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(obj),
+//   });
+// }

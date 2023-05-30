@@ -36,7 +36,8 @@ header .mycontainer .my-centername h1 {
 
 nav {
   border-bottom: 1px solid white;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
 }
 nav .mycontainer {
@@ -75,6 +76,11 @@ nav .mycontainer .my-ul ul a:hover {
 }
 nav .mycontainer .my-bars {
   display: none;
+}
+
+.yenireng {
+  background-color: pink;
+  color: black;
 }
 
 @media screen and (max-width: 800px) {
